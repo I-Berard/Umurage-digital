@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        body{
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+        }
+        h1{
+            grid-row-start: 1;
+            grid-row-end: 1;
+            grid-column-start: 1;
+            grid-column-end: 12;
+            margin: auto;
+        }
+        #sidebar{
+            grid-row-start: 2;
+            grid-row-end: 12;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            margin: auto;
+            
+        }
+        section{
+            grid-row-start: 2;
+            grid-row-end: 12;
+            grid-column-start: 4;
+            grid-column-end: 12;
+        }
+        ul{
+            list-style: none;
+        }
+        button{
+            width: 250px;
+            height: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: aqua;
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            
+        }
+        button:hover{
+            transform: scale(1.1);
+        }
+        img{
+            width: 700px;
+            margin: auto;
+            border: 2px solid transparent;
+            border-radius: 15px;
+            margin: 20px 20px ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Umurage digital</h1>
+    <div id="sidebar">
+        <ul>
+            <li><button><a href="#Home">Home</a></button></li>
+            <li><button><a href="#Members">Members</a></button></li>
+            <li><button><a href="#About">About</a></button></li>
+        </ul>
+    </div>
+    <section>
+        <p id="Home">
+            HTML, or HyperText Markup Language, is the standard language used to
+            create and structure content on the web. It defines the layout of web
+            pages using elements such as headings, paragraphs, links, images, lists,
+            and more. HTML provides the foundational framework that browsers use to
+            display content, while also allowing integration with CSS for styling
+            and JavaScript for dynamic behavior. Each HTML element is represented by
+            tags, which give semantic meaning to the content, making it easier for
+            both browsers and developers to understand and organize information.
+            Whether you're building a simple static site or a complex web
+            application, HTML is the first step in bringing content to life online.
+        </p>
+        <img src="./pexels-padrinan-1591061.jpg" id="image" alt="" height="4000" width="6016" />
+        <div id="Members">
+            <h2>Members of Umurage Digital</h2>
+            <ul>
+                <li>Irakoze Murasira Berard</li>
+                <li>Iyoneza Larissa Prisca</li>
+                <li>Kaneza Amandine</li>
+                <li>Niyobyose Isaac Precieux</li>
+                <li>Uwumugisha Heloise Rugie</li>
+            </ul>
+        </div>
+        <div class="About">
+            <h2 id="About">About</h2>
+            <p>
+                Umurage Digital is a forward-thinking group harnessing the power of
+                technology to shape the future while honoring the past. By integrating
+                cutting-edge tools such as digital archiving, web development, and
+                multimedia storytelling, the team transforms traditional heritage into
+                accessible, interactive digital formats. Their mission is to bridge
+                the gap between culture and innovation, using platforms like websites,
+                mobile apps, and social media to reach broader audiences. Whether it's
+                building smart systems to preserve historical artifacts or using AI to
+                analyze cultural data, Umurage Digital stands at the intersection of
+                technology and tradition, driving digital transformation with a
+                purpose.
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
